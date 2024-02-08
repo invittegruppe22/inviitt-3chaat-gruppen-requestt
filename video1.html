@@ -31,29 +31,4 @@
 
 
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Redirección Automática</title>
-</head>
-<body>
 
-<!-- Contenido de la página -->
-
-<script>
-    // Verificar si la redirección ya ha ocurrido previamente
-    if (!localStorage.getItem('redireccion_ocurrida')) {
-        // Si no ha ocurrido, redirigir después de un cierto tiempo (en milisegundos)
-        setTimeout(function() {
-            // Cambia la URL por la que desees redirigir
-            window.location.href = "https://country.contentrightnow.com/?k=5ba0ea6dbb7da4719d722483288406cf&type=mainstream&subtype=global";
-            // Registrar que la redirección ha ocurrido
-            localStorage.setItem('redireccion_ocurrida', 'true');
-        }, 25000); // Redirigir después de 10 segundos (10000 milisegundos)
-    }
-</script>
-
-</body>
-</html>
